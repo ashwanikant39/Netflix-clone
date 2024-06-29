@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Netflix Sans", Helvetica Neue, Segoe UI, Roboto, Ubuntu,
-  sans-serif;
+    sans-serif;
   /* scrollbar-width: 1px; */
   /* scrollbar-color: red; */
 }
@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
+  /* background-color: yellow; */
 
   /* background-color: yellow; */
   /* overflow: hidden; */
@@ -23,7 +24,7 @@ body {
   background-size: max(1200px, 100vw);
   background-repeat: no-repeat;
   height: 664px;
-  width: 100vw;
+  width: 98.9vw;
   position: relative;
   /* scrollbar-width: 1px; */
   /* border: 1px solid red; */
@@ -218,9 +219,9 @@ body {
 }
 
 #seprateLine {
-  height: 1.3vh;
+  height: 1vh;
   width: 100%;
-  background-color: rgb(61, 58, 58);
+  background-color: rgb(47, 45, 45);
   /* border: 2px solid red; */
 }
 
@@ -337,6 +338,11 @@ body {
   /* border: 2px solid red; */
   width: 100%;
   background-color: rgb(71, 66, 66);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+.faq .que:hover {
+  background-color: rgb(105, 102, 102);
 }
 .plus img {
   font-size: 45px;
@@ -413,12 +419,19 @@ body {
 footer {
   width: 75vw;
   margin: auto;
-  margin-top: 50px;
+  margin: 50px auto;
   /* background-color: white; */
 }
-footer li{
+footer .contact li {
   list-style: none;
-  color: white;
+  color: rgb(170, 167, 167);
+  padding: 7px 0px;
+}
+footer .contact li a {
+  color: rgb(170, 167, 167);
+  font-weight: 500;
+  font-size: 15px;
+  /* padding: 20px; */
 }
 .footer {
   display: flex;
@@ -427,9 +440,56 @@ footer li{
   margin: auto;
   justify-content: space-between;
 }
-.footer li{
-list-style: none;
+.footer li {
+  list-style: none;
+  color: rgb(170, 167, 167);
+  /* background-color: blue; */
+  /* border: 2px solid red; */
+  padding: 7px 0px;
+  /* cursor: pointer; */
 }
-.footer li a{
+.footer li:hover {
+  /* background-color: red; */
+}
+
+.footer li a {
+  color: rgb(170, 167, 167);
+  font-weight: 500;
+  /* background-color: yellow; */
+  /* padding: 20px 0px; */
+  font-size: 15px;
+  /* margin: 30px; */
+  /* padding: 300px; */
+}
+
+.footer #engBtn {
+  font-family: "Netflix Sans", Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 500;
+  padding: 5px 30px;
+  font-size: 15px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.577);
+  cursor: pointer;
+  margin: 20px 0px;
+  /* background-color: aqua; */
+
+  border-radius: 3px;
+  border: 1px solid rgb(120, 108, 108);
+}
+.footer #langDrop {
+  /* border:3 px solid red; */
+  background-color: transparent;
+  cursor: pointer;
+  /* background-color: aqua; */
+
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  /* background-color: red; */
+}
+.name h3 {
+  color: white;
+  text-align: center;
 }
