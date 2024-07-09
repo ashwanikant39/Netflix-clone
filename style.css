@@ -276,7 +276,8 @@ body {
 }
 
 .tvimg img {
-  width: 38vw;
+  width: 655px;
+  /* overflow: hidden; */
   /* background-color: red; */
   position: relative;
   z-index: 10;
@@ -286,11 +287,26 @@ body {
   position: absolute;
   top: 90px;
   left: 75px;
+  overflow: hidden;
   /* border: 2px solid green; */
   right: 0;
-  width: 28vw;
+  width: 490px;
   bottom: 0px;
   /* left: 3; */
+}
+@media screen and (max-width: 1300px){
+  .page-2 {
+    flex-wrap: wrap;
+  }
+  .tvimg img{
+    width: 555px;
+    
+  }
+  .tvimg video{
+   width: 390px;
+
+ }
+  
 }
 .sec-3 .tvimg video {
   position: absolute;
